@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forcast Application</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <div class="heading">
+            <h1>Weather Dashbord</h1>
+        </div>
+        <div class="main-container">
+            <div class="search-container">
+            <h2>Enter a City Name</h2>
+            <input type="text" class="inputbar" placeholder="Enter Your City Name" required>
+            
+            <div class="search-history">
+                <ul>
+                    <!-- <li></li> -->
+                </ul>
+            </div>
+
+            <button class="search-btn">Search</button>
+        
+            <h6 class="or-between">or</h6>
+            <button class="location-btn">Use Current Location</button>
+        </div>
+
+        <div class="weather">
+            <div class="weather-details">
+                <div class="current-weather">
+                <h2> <span>_______</span></h2>
+                <h5>Temperature : <span class="temperature">____ °C</span></h5>
+                <h5>Wind : <span class="Wind">____ M/S</span></h5>
+                <h5>Humidity : <span class="temperature">____%</span></h5>
+                </div>
+                <!-- <div class="image-cloud">
+                    <img src="cloudimage.png">
+                    <p>Light Rain</p>
+                </div> -->
+            </div>
+
+            <div class="fiveday-forcast">
+                <h3> 5-Day Forcast</h3>
+            <ul class="fiveday-cards">
+                <li class="cards">
+                    <h3>_____</h5>
+                    <img src="cloudimage.png" class="cardone-image">
+                    <h5 class="temp">Temp : <span>___ °C</span></h5>
+                    <h5 class="wind">Wind : <span>____ M/S</span></h5>
+                    <h5 class="humidity">Humidity : <span>__%</span></h5>
+                </li>
+                <li class="cards">
+                    <h3>_____</h5>
+                    <img src="cloudimage.png" class="cardone-image">
+                    <h5 class="temp">Temp : <span>____ °C</span></h5>
+                    <h5 class="wind">Wind : <span>____ M/S</span></h5>
+                    <h5 class="humidity">Humidity : <span>__%</span></h5>
+                </li>
+                <li class="cards">
+                    <h3>_____</h5>
+                    <img src="cloudimage.png" class="cardone-image">
+                    <h5 class="temp">Temp : <span>____ °C</span></h5>
+                    <h5 class="wind">Wind : <span>____ M/S</span></h5>
+                    <h5 class="humidity">Humidity : <span>___%</span></h5>
+                </li>
+                <li class="cards">
+                    <h3>_____</h5>
+                    <img src="cloudimage.png" class="cardone-image">
+                    <h5 class="temp">Temp : <span>_____ °C</span></h5>
+                    <h5 class="wind">Wind : <span>____ M/S</span></h5>
+                    <h5 class="humidity">Humidity : <span>__%</span></h5>
+                </li>
+                <li class="cards">
+                    <h3>____</h5>
+                    <img src="cloudimage.png" class="cardone-image">
+                    <h5 class="temp">Temp : <span>____ °C</span></h5>
+                    <h5 class="wind">Wind : <span>____ M/S</span></h5>
+                    <h5 class="humidity">Humidity : <span>__%</span></h5>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+</html>

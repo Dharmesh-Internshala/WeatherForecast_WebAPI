@@ -1,0 +1,362 @@
+/* content body*/
+body {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    /* height: 100vh; */
+}
+.container {
+    height: 100vh;
+    width: 100%;
+    scroll-behavior: smooth;
+    background-color: rgb(211, 250, 154);
+    overflow: hidden;
+ }
+
+/* heading section */
+.heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(142, 142, 238);
+    color: white;
+    border-radius: 5px;
+    padding-top: 5px;
+    margin-top: 1px;
+    border: 0.5px solid rgb(255, 249, 249);
+}
+h1 {
+    font-size: 30px;
+}
+
+/* main container */
+.main-container {
+    display: flex;
+    padding-top: 20px;
+    /* background-color: rgb(170, 248, 248); */
+    gap: 30px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+/* search container  */
+.search-container {
+    width: 500px;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.search-container h2 {
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Times New Roman', Times, serif;
+}
+.search-container input {
+    width: 85%;
+    padding: 7px;
+    border-radius: 5px;
+    border: none;
+    /* margin-bottom: 2px; */
+    padding-left: 8px;    
+}
+
+/* dropdown section */
+.search-history {
+    background-color:transparent;
+    width: 87%;
+    display: flex;
+    flex-direction: column;
+    margin-left: -39px;
+    margin-bottom: 20px;
+    border-radius: 1px;   
+}
+
+.search-history li {
+    position: absolute;
+    margin-top: -13px;
+    background-color: white;
+    width: 81%;
+    list-style: none;
+    cursor: pointer;
+    padding-left: 10px;
+    gap: 0px;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+/* search button */
+.search-container .search-btn {
+    width: 90%;
+    font-size: 16px;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    font-weight: 700;
+    background-color: rgb(121, 121, 238);
+    margin-bottom: 0px;
+    margin-top: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+.search-container .search-btn:hover {
+    background-color: violet;
+    color: rgb(211, 233, 252);
+}
+
+.search-container .or-between {
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 0px;
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+/* current-location */
+.search-container .location-btn {
+    width: 90%;
+    padding: 7px;
+    font-size: 17px;
+    border-radius: 5px;
+    border: none;
+    font-weight: 700;
+    background-color: rgb(124, 129, 133);
+    color: white;
+    margin-top: 0px;
+    cursor: pointer;
+}
+
+.search-container .location-btn:hover {
+    background-color: rgb(144, 171, 245);
+    color: black;
+}
+
+/* main weather section */
+.weather {
+    width: 100%;
+}
+
+.weather-details {
+    display: flex;
+    padding: 20px 70px 5px 15px;
+    justify-content: space-between;
+    border-radius: 8px;
+    margin-right: 20px;
+    background-color: azure;
+    margin-top: 30px;
+    padding-left: 20px;
+    line-height: 0px;
+}
+
+.weather-details h2 {
+    font-size: 22px;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+.weather-details h5 {
+    font-size: 15px;
+    padding-bottom: 5px;
+}
+
+/* weather image section */
+.image-cloud {
+    height: 0px;
+    margin-right: 40px;
+}
+
+.image-cloud img {
+    height: 90px;
+    width: 90px;
+}
+
+.image-cloud p {
+    font-size: 20px;
+    line-height: 1px;
+}
+
+/* 5 day card section */
+.fiveday-forcast {
+    margin-left: 30px;
+    margin-top: 50px;
+    width: 100%;
+}
+
+.fiveday-forcast h3 {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.fiveday-cards {
+    display: flex;
+    gap: 30px;   
+    list-style: none;
+    margin-left: 20px;
+}
+/* card section */
+.cards {
+    background-color: rgb(154, 143, 143);
+    border-radius: 5px;
+    padding: 10px;
+    color: white;  
+}
+
+.cards h3 {
+    font-size: 25px;   
+}
+.cards img {
+    height: 40px;
+    width: 40px;
+    padding-left: 40%;
+}
+.cards h5 {
+    font-size: 15px;
+}
+
+/* various media query for various size */
+@media (max-width:768px) {
+   .main-container {
+    flex-wrap: wrap;
+    gap: 7px;
+   }
+   .search-container {
+    display: flex;
+    align-items: center;    
+    justify-content: center;
+    margin-left: 100px;
+}
+    .search-container h2 {
+        font-size: 20px;
+    }
+    .search-container input {
+        padding: 15px;
+        font-size: 20px;
+    }
+    .search-container .search-btn {
+        padding: 12px;
+    }
+
+    .search-history li {
+        margin-top: -10px;
+        margin-left: -29px;
+        font-size: 20px;
+        width: 85%;
+        padding-top: 2px;
+    }
+.weather-details {
+    margin-left: 20px;
+    padding: 10px 10px 10px 10px;
+}
+.fiveday-forcast {
+    margin-top: 35px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.fiveday-cards {
+    margin-top: 30px;
+    margin-left: 0px;
+    margin-right: 30px;
+    gap: 15px;
+}
+.cards h3 {
+    font-size: 17px;
+}
+}
+
+@media (min-width:375px) and (max-width:376px) {
+    body {
+    height: 100vh;
+}
+    .container {
+    height:auto;
+}
+    .heading h1 {
+    font-size: 10px;
+}  
+    .main-container {
+    display: flex;
+    padding-top: 0px;
+    align-items: center;
+    margin-left: -100px;
+}
+   .search-container input {
+        padding: 2px;
+    }
+    .search-btn {
+        padding: 2px;
+    }
+    .search-container .search-btn {
+        width: 88%;
+        padding: 2px;
+        }    
+     .search-container .or-between {
+        margin-top: 15px;
+        }
+    .search-container .location-btn {
+        width: 88%;
+        padding: 3px;
+        font-size: 13px;
+        margin-top: -20px;
+    }
+    .search-history li {
+        width: 79%;
+        margin-left: -20px;
+    }
+.weather-details {
+    display: flex;
+    padding: 20px 70px 5px 15px;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-left: 120px;
+}
+
+.weather-details h2 {
+    font-size: 12px;
+    padding-bottom: 10px;
+}
+.image-cloud {
+    margin-right: -60px;
+}
+
+.image-cloud p {
+    font-size: 20px;
+    margin-top: -10px;
+}
+    
+.fiveday-forcast {
+    margin-left: 80px;
+    position: relative;
+}
+
+.fiveday-forcast h3 {
+    font-size: 25px;
+    font-weight: 700;
+    margin-left: 100px;
+}
+
+.fiveday-cards {
+    flex-wrap: wrap;
+    list-style: none;
+    margin-left:  12%;
+}
+.cards {
+    background-color: rgb(154, 143, 143);
+    border-radius: 5px;
+    padding: 10px;
+    color: white;  
+}
+
+.cards h3 {
+    font-size: 25px;
+    right: 90px;
+    margin-right: 20px;
+}
+.cards h5 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+}
+}
